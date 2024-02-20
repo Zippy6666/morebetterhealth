@@ -54,7 +54,7 @@ end
 --]]
 
 
-local Flags = bit.band(FCVAR_ARCHIVE, FCVAR_REPLICATED)
+local Flags = bit.bor(FCVAR_ARCHIVE, FCVAR_REPLICATED)
 local ArmorOnSpawn = CreateConVar("mbh_armor_on_spawn", "1", Flags) 
 local MaxHealthAndArmor = CreateConVar("mbh_max_hparmor", "125", Flags) 
 
