@@ -44,7 +44,7 @@ SWEP.HealAmount = 25 -- Maximum heal amount per use
 SWEP.HealRange = 128 -- Range in units at which healing works
 
 
-SWEP.AmmoRegenRate = 1 -- Number of seconds before each ammo regen
+SWEP.AmmoRegenRate = 0.5 -- Number of seconds before each ammo regen
 SWEP.AmmoRegenAmount = 2 -- Amount of ammo refilled every AmmoRegenRate seconds
 
 
