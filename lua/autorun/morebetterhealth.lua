@@ -36,7 +36,8 @@ end
 
 
 local Flags = bit.bor(FCVAR_ARCHIVE, FCVAR_REPLICATED)
-local ArmorOnSpawn = CreateConVar("mbh_armor_on_spawn", "1", Flags) 
+local ArmorOnSpawn = CreateConVar("mbh_armor_on_spawn", "1", Flags)
+local MedkitOnSpawn = CreateConVar("mbh_medkit_on_spawn", "1", Flags) 
 local MaxHealthAndArmor = CreateConVar("mbh_max_hparmor", "125", Flags) 
 
 --[[
@@ -69,7 +70,7 @@ if SERVER then
 
 
         -- Give medkit
-        if GetConVar("sbox_weapons") then
+        if MedkitOnSpawn:GetBool() then
             ply:Give("weapon_medkit")
         end
 
